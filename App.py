@@ -26,4 +26,4 @@ else:
     prediction=price.predict([[sqft,bedroom,age]])
     prediction=pd.Series(prediction)
     if st.button('Predict'):
-        st.success(round(prediction[0]))
+        st.success(round(prediction[0],2))
