@@ -1,5 +1,6 @@
 import streamlit as st
 import joblib
+import pandas as pd
 
 
 PCI=joblib.load('Canada_PCI.pkl')
