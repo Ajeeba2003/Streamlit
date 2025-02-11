@@ -23,5 +23,6 @@ else:
     age=st.slider('Enter the age of house',0,100)
     #slider=st.slider('Area',0,1000)
     prediction=price.predict([[sqft,bedroom,age]])
+    prediction=pd.Series(prediction)
     if st.button('Predict'):
-        st.write(prediction[0])
+        st.success(prediction[0])
